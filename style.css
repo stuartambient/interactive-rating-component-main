@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --COLOR-PRIMARY: hsl(25, 97%, 53%);
+  --COLOR-NEUTRAL-WHITE: hsl(0, 0%, 100%);
+  --COLOR-NEUTRAL-LIGHT-GREY: hsl(217, 12%, 63%);
+  /*   --COLOR-NEUTRAL-MEDIUM-GREY: hsl(216, 12%, 20%); */
+  --COLOR-NEUTRAL-DARK-GREY: hsl(216, 12%, 22%);
+  --COLOR-NEUTRAL-DARK-BLUE: hsl(213, 19%, 18%);
+  --COLOR-NEUTRAL-VERY-DARK-BLUE: hsl(216, 12%, 8%);
+  --FONT-OVERPASS: 'Overpass', sans-serif;
+}
+
+/* HAVE TO ADJUST COLORS, NOT WORKING WITH FIGMA, MEDIUM GREY 
+IS TOO LIGHT */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background-color: var(--COLOR-NEUTRAL-VERY-DARK-BLUE);
+  font-family: var(--FONT-OVERPASS);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings__wrapper {
+  background-color: var(--COLOR-NEUTRAL-DARK-BLUE);
+  width: 40vw;
+  height: 40vh;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+.ratings__image {
+  background-color: var(--COLOR-NEUTRAL-DARK-GREY);
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratings__start-icons {
+  width: 40%;
+  height: 40%;
+}
+
+.ratings__question {
+  font-size: 3.2rem;
+  color: var(--COLOR-NEUTRAL-WHITE);
+}
+
+.ratings__instructions {
+  font-size: 14px;
+  color: var(--COLOR-NEUTRAL-WHITE);
+}
+
+.ratings__group {
+  display: flex;
+  justify-content: space-around;
+  padding-inline-start: 0;
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.ratings__rank {
+  /* border: 1px solid var(--COLOR-NEUTRAL-LIGHT-GREY); */
+  background-color: var(--COLOR-NEUTRAL-DARK-GREY);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+
+  color: var(--COLOR-NEUTRAL-LIGHT-GREY);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratings__submit {
+}
