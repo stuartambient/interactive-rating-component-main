@@ -98,7 +98,6 @@ body {
   height: 5rem;
   border-radius: 50%;
   font-size: 1.7rem;
-  transition: background-color 1s;
 
   color: var(--COLOR-NEUTRAL-LIGHT-GREY);
   display: flex;
@@ -109,7 +108,7 @@ body {
 .ratings__rank:hover {
   cursor: pointer;
   font-weight: 700;
-  border: 2px solid var(--COLOR-PRIMARY);
+  /*  background-color: var(--COLOR-NEUTRAL-LIGHT-GREY); */
 }
 
 .ratings__submit {
@@ -123,13 +122,9 @@ body {
 
 .active {
   background-color: var(--COLOR-PRIMARY);
-  border: 2px solid var(--COLOR-PRIMARY);
+  /* border: 2px solid var(--COLOR-PRIMARY); */
   color: var(--COLOR-NEUTRAL-WHITE);
   /* transition: background-color 2s; */
-}
-
-.confirmation {
-  color: white;
 }
 
 .confirmation__wrapper {
@@ -139,4 +134,32 @@ body {
 .confirmation__wrapper--display {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.confirmation__image {
+  width: 150px;
+  height: auto;
+}
+
+.confirmation__image > img {
+  width: 100%;
+}
+
+.cofirmation__rating {
+  color: var(--COLOR-PRIMARY);
+  border-radius: 20px;
+  background-color: var(--COLOR-NEUTRAL-DARK-GREY);
+  padding: 1rem 2rem;
+}
+
+.confirmation__text {
+  color: var(--COLOR-NEUTRAL-LIGHT-GREY);
+  text-align: center;
+  flex: 0 0 4rem;
+}
+
+.confirmation__ty {
+  color: var(--COLOR-NEUTRAL-WHITE);
 }

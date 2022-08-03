@@ -40,3 +40,5 @@ ratings.forEach(item => {
 submitRating.addEventListener('click', () => {
   submit();
 });
+
+/* kPhHp6RRkVFarVt */
