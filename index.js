@@ -21,24 +21,28 @@ const changeRank = () => {
   const ratingsArr = [...ratings];
 
   ratingsArr.forEach(rank => {
-    if (rank.value > rating) {
+    /*     if (rank.value > rating) {
       rank.classList.remove('active');
     }
     if (rank.value <= rating) {
       rank.classList.add('active');
+    } */
+    if (rank.value === rating) {
+      rank.classList.add('active');
+    } else {
+      rank.classList.remove('active');
     }
   });
 };
 
 ratings.forEach(item => {
-  item.addEventListener('mouseover', item => {
+  item.addEventListener('click', item => {
     rating = item.target.value;
     changeRank();
   });
 });
 
-submitRating.addEventListener('click', () => {
+submitRating.addEventListener('click', e => {
+  if (!rating) return;
   submit();
 });
-
-/* kPhHp6RRkVFarVt */
